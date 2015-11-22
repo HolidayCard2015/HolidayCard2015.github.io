@@ -107,6 +107,13 @@ section{
 #video-play-button-container > img{
   width: 130px;
   height: 130px;
+
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+#video-play-button-container > img:hover{
+  opacity: 0.6;
 }
 
 #video-play-button-container .video-hero-text{
