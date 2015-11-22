@@ -11,8 +11,17 @@ section{
   /*padding: 20px;*/
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .white{
   color: #FFF;
+}
+
+.bltzn-green{
+  color: #00ea5c;
 }
 
 /*clearfix*/
@@ -76,6 +85,16 @@ section{
   color: #FFF;
   padding: 5px;
   margin-right: 10px;
+}
+
+.nav-item a{
+  padding-bottom: 3px;
+  border-bottom: 3px solid rgba(0, 234, 92, 0);
+  transition: border-bottom 0.5s;
+}
+
+.nav-item a:hover{
+  border-bottom: 3px solid rgba(0, 234, 92, 1);
 }
 
 /*sections*/
