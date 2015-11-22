@@ -1,3 +1,174 @@
-h1{
-  color: red;
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+section{
+  /*padding: 20px;*/
+}
+
+.white{
+  color: #FFF;
+}
+
+/*clearfix*/
+.clearfix:before,
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1; /* IE < 8 */
+}
+
+
+/*Navigation bar*/
+.nav-bar{
+  background-color: #323533;
+  max-width: 960px;
+  height: 100px;
+
+  position:fixed;
+  /*top: 0;*/
+  left: 50%;
+  margin-left: -480px;
+  width: 100%;
+
+  z-index: 7;
+}
+
+/*add media query for lower than 960px*/
+
+.nav-bar .bltzn-logo{
+  height: auto;
+  width: 150px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: inline;
+}
+
+.nav-bar > ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  float: right;
+  padding-top: 40px;
+  padding-right: 20px;
+}
+
+.nav-bar > ul > li{
+  display: inline;
+}
+
+.nav-item{
+  font-size: 16px;
+  color: #FFF;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+/*sections*/
+.main-content{
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#video-hero{
+  background-image: url('../assets/hero-coverimage.png');
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  height: 100%;
+}
+
+#video-play-button-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+}
+
+#video-play-button-container > img{
+  width: 130px;
+  height: 130px;
+}
+
+#video-play-button-container .video-hero-text{
+  color: #FFF;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+#who-we-are{
+  background-image: url('../assets/WhoWeAre-coverimage.png');
+  background-color: #323533;
+  background-size: cover;
+  background-position: center;
+  /*height: 100%;*/
+}
+
+#who-we-are .copy,
+#who-we-are .image{
+  color: #00ea5c;
+  float: left;
+  width: 50%;
+}
+
+#who-we-are .copy{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#who-we-are .header{
+  font-size: 26px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#who-we-are hr{
+  border-color: #00ea5c;
+}
+
+#who-we-are .paragraph{
+  font-size: 38px;
+  padding-top: 20px;
+  line-height: 1.5;
+}
+
+#who-we-are .image img{
+  width: 120%
+}
+
+#our-mission{
+  min-height: 700px;
+  background-color: #00ea5c;
+}
+
+
+#testimonials{
+  background-image: url('../assets/Testimonials-SnowflakeBg.png');
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+}
+
+#cta{
+  background-color: #323533;
+  height: 50%;
 }
