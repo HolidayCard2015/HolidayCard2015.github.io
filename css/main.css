@@ -212,7 +212,7 @@ hr{
   background-color: #323533;
   background-size: cover;
   background-position: center;
-  /*height: 100%;*/
+  height: auto;
 }
 
 #who-we-are .copy,
@@ -254,7 +254,7 @@ hr{
 #our-mission{
   /*min-height: 700px;*/
   background-image: url('../assets/OurMission-coverimage.png');
-  /*height: 100%;*/
+  height: auto;
   background-size: contain;
   background-position: center;
   background-color: #00ea5c;
@@ -291,7 +291,8 @@ hr{
 
 #testimonials{
   background-image: url('../assets/Testimonials-SnowflakeBg.png');
-  height: 60%;
+  /*height: 60%;*/
+  height: auto;
   background-size: cover;
   background-position: center;
 }
