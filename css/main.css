@@ -357,6 +357,9 @@ hr{
 
   text-align: center;
   padding-top: 30px;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s linear;
 }
 
 #cta .cta-button:hover{
@@ -365,6 +368,7 @@ hr{
 
 #cta .cta-button.hide{
   visibility: hidden;
+  opacity: 0;
 }
 
 #cta .cossette-footer{
@@ -418,6 +422,8 @@ hr{
 
 #cta .popup{
   visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s linear;
   background-color: #00ea5c;
   width: 100%;
   position: relative;
@@ -425,6 +431,7 @@ hr{
 
 #cta .popup.showup{
   visibility: visible;
+  opacity: 1;
 }
 
 #cta .popup .paragraph{
