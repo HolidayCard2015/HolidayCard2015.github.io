@@ -242,6 +242,7 @@ hr{
   background-size: contain;
   background-position: center;
   background-color: #00ea5c;
+  padding: 40px 0;
 }
 
 #our-mission .copy{
@@ -440,7 +441,7 @@ hr{
   padding-top: 30px;
   padding-bottom: 30px;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: 33px;
   line-height: 1.7;
 }
 
