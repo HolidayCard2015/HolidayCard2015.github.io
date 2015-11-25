@@ -28,18 +28,38 @@ $(function() {
   });
 
 // navigation
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           if (target.length) {
-             $('html,body').animate({
-                 scrollTop: target.offset().top - 100
-            }, 1000);
-            return false;
-        }
-      }
-  });
+  // $('a[href*=#]:not([href=#])').click(function() {
+  //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
+  //       var target = $(this.hash);
+  //       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  //          if (target.length) {
+  //            $('html,body').animate({
+  //                scrollTop: target.offset().top - 130
+  //           }, 1000);
+  //           return false;
+  //       }
+  //     }
+  // });
+  $(document).on("scroll", onScroll);
+
+  		$('a[href^="#"]').on('click', function (e) {
+  			e.preventDefault();
+  			$(document).off("scroll");
+
+  			$('.nav-item a').each(function () {
+  				$(this).removeClass('active');
+  			});
+  			$(this).addClass('active');
+
+  			var target = this.hash;
+  			$target = $(target);
+  			$('html, body').stop().animate({
+  				'scrollTop': $target.offset().top-130
+  			}, 900, 'swing', function () {
+  				window.location.hash = target;
+  				$(document).on("scroll", onScroll);
+  			});
+  		});
 
 // inserting iframe
   $('.video-play-button').on('click', function(){
@@ -48,4 +68,21 @@ $(function() {
     });
   });
 
-});
+});// end document ready
+
+
+//scroll on top of section activates.
+function onScroll(event){
+		var scrollPosition = $(document).scrollTop();
+		$('.nav-item a').each(function () {
+			var currentLink = $(this);
+			var refElement = $(currentLink.attr("href"));
+			if (refElement.position().top-140 <= scrollPosition && refElement.position().top-140 + refElement.height() > scrollPosition) {
+				$('nav ul li .nav-item a').removeClass("active");
+				currentLink.addClass("active");
+			}
+			else{
+				currentLink.removeClass("active");
+			}
+		});
+	}

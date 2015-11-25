@@ -46,6 +46,11 @@ html, body{
   width: 100%;
 }
 
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
 body{
   font-family: 'Montserrat', sans-serif;
 }
@@ -60,8 +65,9 @@ a{
 }
 
 hr{
-  border-width: 2px;
-  border-color: black;
+  border-width: 1.5px;
+  border-radius: 5px;
+  border-color: #323533;
 }
 
 .white{
@@ -91,17 +97,35 @@ hr{
 /*Navigation bar*/
 .nav-bar{
   background-color: #323533;
-  max-width: 960px;
+  max-width: 1000px;
   height: 100px;
 
   position:fixed;
   /*top: 0;*/
   left: 50%;
-  margin-left: -480px;
+  margin-left: -500px;
   width: 100%;
 
   z-index: 7;
+
+  -webkit-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
 }
+
+@media screen and (max-width:1000px) {
+  .nav-bar{
+    left: 0;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width:640px) {
+  .nav-bar .nav-item{
+    display: none;
+  }
+}
+
 
 /*add media query for lower than 960px*/
 
@@ -138,6 +162,12 @@ hr{
 .nav-item a{
   padding-bottom: 3px;
   border-bottom: 3px solid rgba(0, 234, 92, 0);
+  transition: border-bottom 0.5s;
+}
+
+.nav-item a.active{
+  padding-bottom: 3px;
+  border-bottom: 3px solid rgba(0, 234, 92, 1);
   transition: border-bottom 0.5s;
 }
 
@@ -264,6 +294,7 @@ hr{
 #our-mission .copy{
   padding-top: 30px;
   margin-bottom: 30px;
+  color: #323533;
 }
 
 #our-mission .header{
@@ -304,6 +335,7 @@ hr{
 #testimonials .copy{
   padding-top: 30px;
   margin-bottom: 50px;
+  color: #323533;
 }
 
 #testimonials .copy .header{
