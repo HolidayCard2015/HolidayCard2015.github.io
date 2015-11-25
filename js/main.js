@@ -6,19 +6,24 @@ $(function() {
       infinite: true,
       autoplay: true,
       autoplaySpeed:5000,
-      prevArrow:"<img class='a-left control-c prev slick-prev' src='../assets/Testimonial-LEFTArrow-HOVER.png'>",
-      nextArrow:"<img class='a-right control-c next slick-next' src='../assets/Testimonial-RIGHTArrow-HOVER.png'>"
+      prevArrow:"<div class='icon-arrowleft'></div>",
+      nextArrow:"<div class='icon-arrowright'></div>"
+      // prevArrow:"<img class='a-left control-c prev slick-prev' src='../assets/Testimonial-LEFTArrow-HOVER.png'>",
+      // nextArrow:"<img class='a-right control-c next slick-next' src='../assets/Testimonial-RIGHTArrow-HOVER.png'>"
     });
 
 
 // cta popup
   $('.cta-button').on('click', function(){
+    // var popupHeight = $('#cta .popup').outerHeight();
+    // $('#cta').outerHeight(popupHeight + 60);
     $('#cta .popup').addClass('showup');
     $('#cta .cta-button').addClass('hide');
   });
 
   $('#cta .popup .close').on('click', function(){
     $('#cta .popup').removeClass('showup');
+    // $('#cta').removeAttr('style');
     $('#cta .cta-button').removeClass('hide');
   });
 
@@ -27,19 +32,6 @@ $(function() {
     $('html, body').animate({ scrollTop: 0 }, 'fast');
   });
 
-// navigation
-  // $('a[href*=#]:not([href=#])').click(function() {
-  //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
-  //       var target = $(this.hash);
-  //       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-  //          if (target.length) {
-  //            $('html,body').animate({
-  //                scrollTop: target.offset().top - 130
-  //           }, 1000);
-  //           return false;
-  //       }
-  //     }
-  // });
   $(document).on("scroll", onScroll);
 
   		$('a[href^="#"]').on('click', function (e) {
