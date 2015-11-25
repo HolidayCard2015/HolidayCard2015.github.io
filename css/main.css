@@ -491,11 +491,9 @@ hr{
 #cta .cossette-footer{
   text-align: center;
   width: 100%;
-  /*position: absolute;*/
-  /*bottom: 25px;*/
-  /*left: 0;*/
-  padding: 0 20px;
+  padding: 30px 20px 0px;
   box-sizing: border-box;
+	border-top: 1.5px solid white;
 }
 
 #cta .cossette-footer .copy{
