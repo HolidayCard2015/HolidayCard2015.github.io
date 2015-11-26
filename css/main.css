@@ -65,7 +65,13 @@ body{
 section{
   /*padding: 20px;*/
 	box-sizing: border-box;
-	padding-top: 80px !important;
+	padding-top: 90px !important;
+}
+
+@media screen and (max-width: 960px) {
+	section{
+		padding-top: 60px !important;
+	}
 }
 
 a{
@@ -198,7 +204,7 @@ hr{
 	}
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:690px) {
   .nav-bar .nav-item{
     display: none;
   }
@@ -227,8 +233,8 @@ hr{
 
 @media screen and (max-width:960px) {
 	.main-content{
-		padding-left: 35px;
-		padding-right: 35px;
+		padding-left: 45px;
+		padding-right: 45px;
 	}
 }
 
@@ -242,6 +248,8 @@ hr{
   background-image: url('../assets/hero-coverimage.png');
   background-size: cover;
   background-position: center;
+
+	padding-top: 0 !important;
 
   position: relative;
   height: auto;
@@ -310,14 +318,14 @@ hr{
 
 
 #who-we-are .copy{
-  margin-top: 30px;
+  /*margin-top: 30px;*/
   margin-bottom: 30px;
-	width: 40%;
+	width: 45%;
 }
 
 #who-we-are .header{
   font-size: 24px;
-  padding-top: 20px;
+  /*padding-top: 20px;*/
   padding-bottom: 20px;
 }
 
@@ -326,14 +334,14 @@ hr{
 }
 
 #who-we-are .paragraph{
-  font-size: 38px;
-  padding-top: 20px;
-  line-height: 1.5;
+	font-size: 34px;
+	padding-top: 40px;
+	line-height: 1.5;
 }
 
 #who-we-are .image{
   /*margin-top: 40px;*/
-	width: 60%;
+	width: 55%;
 }
 
 #who-we-are .image img{
@@ -364,23 +372,23 @@ hr{
 #our-mission{
   /*min-height: 700px;*/
   background-image: url('../assets/OurMission-coverimage.png');
+	background-repeat: no-repeat;
   height: auto;
   background-size: contain;
   background-position: center;
   background-color: #00ea5c;
-  padding: 40px 0;
+  padding-bottom: 90px;
 }
 
 #our-mission .copy{
-  padding-top: 30px;
-  margin-bottom: 30px;
+  /*padding-top: 30px;*/
   color: #323533;
 }
 
 #our-mission .header{
-  font-size: 24px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+	font-size: 24px;
+	/*padding-top: 20px;*/
+	padding-bottom: 50px;
   width: 40%;
 }
 
@@ -389,20 +397,34 @@ hr{
 }
 
 #our-mission .mission-logo{
+	box-sizing: border-box;
+	padding: 30px;
   width: 20%;
   float: left;
 }
 
 #our-mission .mission-logo img{
-  width: 150px;
+  width: 110px;
 }
 
 #our-mission .paragraph{
   width: 80%;
   float: left;
-  font-size: 38px;
+  /*font-size: 38px;*/
   margin-bottom: 80px;
+
+	font-size: 34.5px;
+	padding-top: 20px;
+	line-height: 1.5;
 }
+
+@media screen and (max-width:960px) {
+	#our-mission{
+		background-image: url('../assets/ourMission-mobile-bg.png');
+	}
+
+}
+
 
 #testimonials{
   background-image: url('../assets/Testimonials-SnowflakeBg.png');
@@ -412,19 +434,24 @@ hr{
   background-position: center;
 }
 
+#testimonials hr{
+	margin-top: 20px;
+}
+
 #testimonials .slider{
   width: 100%;
+	margin-bottom: 60px;
 }
 
 #testimonials .copy{
-  padding-top: 30px;
+  /*padding-top: 30px;*/
   margin-bottom: 50px;
   color: #323533;
 }
 
 #testimonials .copy .header{
   font-size: 24px;
-  padding-top: 20px;
+  /*padding-top: 20px;*/
   padding-bottom: 20px;
   width: 50%;
 }
@@ -519,7 +546,7 @@ hr{
   margin: 125px auto;
 
   text-align: center;
-  padding-top: 30px;
+  padding-top: 35px;
   visibility: visible;
   opacity: 1;
   transition: opacity 0.5s linear;
