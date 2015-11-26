@@ -41,7 +41,10 @@
 
 /*iconfonts end*/
 
-
+@font-face{
+	font-family: 'Montserrat';
+	src: url('../temp/Montserrat-Bold.ttf');
+}
 
 
 
@@ -72,6 +75,7 @@ hr{
   border-width: 1.5px;
   border-radius: 5px;
   border-color: #323533;
+	margin: 0;
 }
 
 .white{
@@ -97,6 +101,10 @@ hr{
     zoom: 1; /* IE < 8 */
 }
 /************************/
+
+
+
+
 
 /*Navigation bar*/
 .nav-bar{
@@ -173,6 +181,15 @@ hr{
   }
 }
 
+@media screen and (max-width:960px) {
+	.nav-bar .bltzn-logo{
+		padding-left: 35px;
+	}
+	.nav-bar > ul{
+		padding-right: 35px;
+	}
+}
+
 @media screen and (max-width:640px) {
   .nav-bar .nav-item{
     display: none;
@@ -199,6 +216,18 @@ hr{
   padding-left: 20px;
   padding-right: 20px;
 }
+
+@media screen and (max-width:960px) {
+	.main-content{
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+}
+
+/*.header{
+	border-bottom: 2px solid;
+	letter-spacing: 0.5px;
+}*/
 
 
 #video-hero{
@@ -268,6 +297,7 @@ hr{
   color: #00ea5c;
   float: left;
   width: 50%;
+	box-sizing: border-box;
 }
 
 #who-we-are .copy{
@@ -300,6 +330,26 @@ hr{
   display: block;
 }
 
+@media screen and (max-width: 960px) {
+
+	#who-we-are .copy,
+	#who-we-are .image{
+	  float: none;
+	  width: 100%;
+	}
+
+	#who-we-are .image{
+		padding: 0 10%;
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	#who-we-are .image{
+		padding: 0;
+	}
+}
+
 #our-mission{
   /*min-height: 700px;*/
   background-image: url('../assets/OurMission-coverimage.png');
@@ -321,6 +371,10 @@ hr{
   padding-top: 20px;
   padding-bottom: 20px;
   width: 40%;
+}
+
+#our-mission hr{
+	margin-top: 20px;
 }
 
 #our-mission .mission-logo{
