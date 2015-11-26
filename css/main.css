@@ -472,7 +472,7 @@ hr{
 	box-sizing: border-box;
 	margin: 0 auto;
 	padding-left: 20px;
-	width: 480px;
+	max-width: 480px;
 }
 
 #testimonials .slider .slider-testimonials .avatar{
@@ -488,6 +488,12 @@ hr{
 	letter-spacing: 1px;
   display: inline-block;
   padding-left: 40px;
+}
+
+@media screen and (max-width:480px) {
+	#testimonials .slider .slider-testimonials .copy{
+		width: 140px;
+	}
 }
 
 /*custom slider slick css*/
@@ -532,6 +538,31 @@ hr{
 .icon-arrowright:hover::before{
   transition: color 0.3s;
   color: #00ea5c;
+}
+
+@media screen and (max-width:690px) {
+	#testimonials{
+		padding-bottom: 90px;
+	}
+
+	.icon-arrowleft{
+		z-index: 2;
+		font-size: 70px;
+		position: absolute;
+		top: auto;
+		/*left: 30%;*/
+		padding-right: 70px;
+		bottom: -110px;
+	}
+	.icon-arrowright{
+		z-index: 2;
+		font-size: 70px;
+		position: absolute;
+ 		top: auto;
+		/*right: 30%;*/
+		padding-left: 70px;
+		bottom: -110px;
+	}
 }
 
 #cta{
@@ -677,4 +708,12 @@ hr{
   position: absolute;
   top: 0;
   right: 0;
+}
+
+
+/*more queries*/
+@media screen and (max-width:960px) {
+	hr{
+		max-width: 100% !important;
+	}
 }
