@@ -238,10 +238,9 @@ hr{
 	}
 }
 
-/*.header{
-	border-bottom: 2px solid;
+.header{
 	letter-spacing: 0.5px;
-}*/
+}
 
 
 #video-hero{
@@ -389,11 +388,11 @@ hr{
 	font-size: 24px;
 	/*padding-top: 20px;*/
 	padding-bottom: 50px;
-  width: 40%;
 }
 
 #our-mission hr{
 	margin-top: 20px;
+	max-width: 50%;
 }
 
 #our-mission .mission-logo{
@@ -453,13 +452,20 @@ hr{
   font-size: 24px;
   /*padding-top: 20px;*/
   padding-bottom: 20px;
-  width: 50%;
+}
+
+#testimonials .copy .header hr{
+	max-width: 50%;
 }
 
 #testimonials .slider .slider-testimonials .emoji{
   margin: 60px auto 60px;
-  width: 350px;
-  height: auto;
+  /*width: 350px;
+  height: auto;*/
+
+	width: 100%;
+	max-width: 430px;
+	height: auto;
 }
 
 #testimonials .slider .slider-testimonials .screenager{
