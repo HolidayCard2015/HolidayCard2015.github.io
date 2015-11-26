@@ -4,7 +4,7 @@ $(function() {
     $('.slider').slick({
       arrows: true,
       infinite: true,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed:5000,
       prevArrow:"<div class='icon-arrowleft'></div>",
       nextArrow:"<div class='icon-arrowright'></div>"
