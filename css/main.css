@@ -431,6 +431,7 @@ hr{
   height: auto;
   background-size: cover;
   background-position: center;
+	padding-bottom: 90px;
 }
 
 #testimonials hr{
@@ -439,7 +440,7 @@ hr{
 
 #testimonials .slider{
   width: 100%;
-	margin-bottom: 60px;
+	margin-bottom: 0px;
 }
 
 #testimonials .copy{
@@ -548,7 +549,7 @@ hr{
 
 @media screen and (max-width:690px) {
 	#testimonials{
-		padding-bottom: 90px;
+		padding-bottom: 150px;
 	}
 
 	.icon-arrowleft{
