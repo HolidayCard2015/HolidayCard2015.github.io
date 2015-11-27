@@ -702,9 +702,22 @@ hr{
   color: #00ea5c;
 }
 
+@media screen and (max-width:480px) {
+	#cta .cossette-footer{
+		text-align: left;
+		padding-left: 0;
+	}
+
+	#cta .cossette-footer .icon-cossettelogo-02:before {
+    font-size: 42px;
+    display: block;
+    margin-left: -7px;
+	}
+}
+
 .icon-backtotop{
   position: absolute;
-  bottom: 15px;
+  bottom: 30px;
   right: 15px;
   z-index: 3;
 }
