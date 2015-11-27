@@ -590,7 +590,7 @@ hr{
   /*height: 50%;*/
   height: auto;
   position: relative;
-  padding-top: 30px;
+  padding-top: 0px !important;
   padding-bottom: 30px;
   -webkit-transition: height 1s;
   transition: height 1s;
