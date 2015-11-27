@@ -517,7 +517,7 @@ hr{
   font-size: 50px;
   position: absolute;
   top: 70px;
-  left: 0px;
+  left: -20px;
 }
 
 .icon-arrowright{
@@ -525,7 +525,7 @@ hr{
   font-size: 50px;
   position: absolute;
   top: 70px;
-  right: 0px;
+  right: -20px;
 }
 
 .icon-arrowleft::before,
