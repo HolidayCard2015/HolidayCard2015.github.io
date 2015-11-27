@@ -127,9 +127,6 @@ hr{
   width: 100%;
 
   z-index: 7;
-
-  -webkit-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
 }
 
@@ -165,13 +162,33 @@ hr{
   color: #FFF;
   padding: 5px;
   margin-right: 30px;
+	-webkit-backface-visibility: hidden;
+}
+
+.nav-item a{
+	display: inline-table;
+	/*-webkit-backface-visibility: hidden;*/
+	vertical-align:baseline;
+}
+
+.nav-item a:hover:after {
+    content: "";
+    width: 100%;
+    border-bottom: 2px solid #00ea5c;
+    display: table-caption;
+		display: -moz-inline-stack;
+    vertical-align: baseline;
+    position: relative;
+    top: 23px;
+    border-radius: 10px;
+		-webkit-backface-visibility: hidden;
 }
 
 .nav-item.menu-c{
 	margin-right: 0 !important;
 }
 
-.nav-item a{
+/*.nav-item a{
   padding-bottom: 3px;
   border-bottom: 3px solid rgba(0, 234, 92, 0);
   transition: border-bottom 0.5s;
@@ -185,7 +202,7 @@ hr{
 
 .nav-item a:hover{
   border-bottom: 3px solid rgba(0, 234, 92, 1);
-}
+}*/
 
 
 @media screen and (max-width:1000px) {
@@ -258,7 +275,9 @@ hr{
   position: absolute;
   top: 54.5%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 
   text-align: center;
 }
@@ -268,6 +287,7 @@ hr{
   height: 130px;
 
   opacity: 1;
+  -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
@@ -537,11 +557,13 @@ hr{
 .icon-arrowleft::before,
 .icon-arrowleft::before{
   color: #323533;
+  -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 
 .icon-arrowleft:hover::before,
 .icon-arrowright:hover::before{
+  -webkit-transition: color 0.3s;
   transition: color 0.3s;
   color: #00ea5c;
 }
@@ -578,6 +600,7 @@ hr{
   position: relative;
   padding-top: 30px;
   padding-bottom: 30px;
+  -webkit-transition: height 1s;
   transition: height 1s;
 }
 
@@ -601,7 +624,9 @@ hr{
   padding-top: 35px;
   visibility: visible;
   opacity: 1;
+  -webkit-transition: opacity 0.5s linear;
   transition: opacity 0.5s linear;
+  -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
 
@@ -624,10 +649,13 @@ hr{
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(60%, -70%);
+  -webkit-transform: translate(60%, -70%);
+      -ms-transform: translate(60%, -70%);
+          transform: translate(60%, -70%);
   z-index: 2;
   color: #00ea5c;
   font-size: 70px;
+  -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 
@@ -654,6 +682,7 @@ hr{
 #cta .cossette-footer .icon-cossettelogo-02:before{
   color: white;
   font-size: 36px;
+  -webkit-transition: color .5s;
   transition: color .5s;
 }
 
@@ -673,6 +702,7 @@ hr{
 .icon-backtotop::before{
   color: white;
   font-size: 50px;
+  -webkit-transition: color .5s;
   transition: color .5s;
 }
 
@@ -684,6 +714,7 @@ hr{
 
 #cta .popup{
   z-index: 5;
+  -webkit-transition: opacity 0.8s linear;
   transition: opacity 0.8s linear;
   opacity: 0;
   background-color: #00ea5c;
