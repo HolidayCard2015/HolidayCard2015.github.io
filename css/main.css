@@ -213,6 +213,9 @@ hr{
 }
 
 @media screen and (max-width:690px) {
+	.nav-bar{
+		position: absolute;
+	}
   .nav-bar .nav-item{
     display: none;
   }
@@ -330,7 +333,7 @@ hr{
 #who-we-are .copy{
   /*margin-top: 30px;*/
   margin-bottom: 30px;
-	width: 45%;
+	width: 41%;
 }
 
 #who-we-are .header{
@@ -351,7 +354,7 @@ hr{
 
 #who-we-are .image{
   /*margin-top: 40px;*/
-	width: 55%;
+	width: 59%;
 }
 
 #who-we-are .image img{
@@ -604,7 +607,7 @@ hr{
   /*height: 50%;*/
   height: auto;
   position: relative;
-  padding-top: 0px !important;
+  padding-top: 30px !important;
   padding-bottom: 30px;
   -webkit-transition: height 1s;
   transition: height 1s;
