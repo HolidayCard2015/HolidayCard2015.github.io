@@ -257,12 +257,19 @@ hr{
 #video-hero{
   background-image: url('../assets/hero-coverimage.png');
   background-size: cover;
-  background-position: center;
+  /*background-position: center;*/
 
 	padding-top: 0 !important;
 
   position: relative;
   height: auto;
+}
+
+@media screen and (max-width: 600px) {
+	#video-hero{
+		background-image: url('../assets/hero-mobile-bg.png');
+	}
+
 }
 
 #video-play-button-container{
@@ -302,7 +309,7 @@ hr{
   /*padding-bottom: 100%;*/
 	padding-top: 25px;
 	/*height: 0;*/
-  height: 100vh;
+  height: 90vh;
 }
 
 #video-player iframe{
@@ -311,7 +318,9 @@ hr{
   width: 100%;
   height: calc(100% - 100px);
   bottom: 0;
+	/*background-color: transparent;*/
 }
+
 
 #who-we-are{
   background-image: url('../assets/WhoWeAre-coverimage.png');
@@ -401,7 +410,7 @@ hr{
 #our-mission .header{
 	font-size: 24px;
 	/*padding-top: 20px;*/
-	padding-bottom: 50px;
+	/*padding-bottom: 50px;*/
 }
 
 #our-mission hr{
@@ -427,13 +436,23 @@ hr{
   margin-bottom: 80px;
 
 	font-size: 34.5px;
-	padding-top: 20px;
+	padding-top: 40px;
 	line-height: 1.5;
 }
 
 @media screen and (max-width:960px) {
 	#our-mission{
-		background-image: url('../assets/ourMission-mobile-bg.png');
+		background-image: url('../assets/bltzn-mobile-ourmissionbg-04.png');
+		background-position: center bottom;
+	}
+
+	#our-mission .mission-logo{
+		display: none;
+	}
+
+	#our-mission .paragraph{
+		width: 100%;
+		margin-bottom: 140px;
 	}
 
 }
@@ -587,7 +606,7 @@ hr{
 		font-size: 70px;
 		position: absolute;
 		top: auto;
-		/*left: 30%;*/
+		left: 20px;
 		padding-right: 70px;
 		bottom: -110px;
 	}
@@ -596,7 +615,7 @@ hr{
 		font-size: 70px;
 		position: absolute;
  		top: auto;
-		/*right: 30%;*/
+		right: 20px;
 		padding-left: 70px;
 		bottom: -110px;
 	}
@@ -705,19 +724,6 @@ hr{
   color: #00ea5c;
 }
 
-@media screen and (max-width:480px) {
-	#cta .cossette-footer{
-		text-align: left;
-		padding-left: 0;
-	}
-
-	#cta .cossette-footer .icon-cossettelogo-02:before {
-    font-size: 42px;
-    display: block;
-    margin-left: -7px;
-	}
-}
-
 .icon-backtotop{
   position: absolute;
   bottom: 30px;
@@ -731,6 +737,25 @@ hr{
   -webkit-transition: color .5s;
   transition: color .5s;
 }
+
+@media screen and (max-width:480px) {
+	#cta .cossette-footer{
+		text-align: left;
+		padding-left: 0;
+	}
+
+	#cta .cossette-footer .icon-cossettelogo-02:before {
+    font-size: 42px;
+    display: block;
+    margin-left: -7px;
+	}
+
+	#cta .icon-backtotop{
+		bottom: 40px;
+		right: 30px;
+	}
+}
+
 
 #cta .cossette-footer hr{
   border-color: white;
@@ -778,5 +803,30 @@ hr{
 @media screen and (max-width:960px) {
 	hr{
 		max-width: 100% !important;
+	}
+}
+
+@media screen and (max-width:480px) {
+	.header{
+		font-size: 21px !important;
+	}
+
+	.paragraph{
+		font-size: 26px !important;
+    padding-top: 30px !important;
+	}
+
+	#video-play-button-container > img{
+	  width: 100px;
+	  height: 100px;
+	}
+
+	#video-play-button-container .video-hero-text{
+		font-size: 13.5px;
+	}
+
+	#cta .popup .paragraph {
+    line-height: 1.3;
+		font-size: 24.5px !important;
 	}
 }
