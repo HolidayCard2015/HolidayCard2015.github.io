@@ -377,8 +377,8 @@ hr
     position: relative;
 
     box-sizing: border-box;
-    /*height: 0;*/
-    height: 85vh;
+    height: 600px;
+    /*height: 85vh;*/
     /*padding-bottom: 100%;*/
     padding-top: 25px;
     padding-bottom: 56.25%;
@@ -386,7 +386,7 @@ hr
 
 @media only screen and (max-width: 480px) {
   #video-player{
-    height: 65vh;
+    height: 470px;
   }
 }
 
@@ -989,14 +989,14 @@ hr
 
 #cta .popup .paragraph
 {
-    font-size: 30px;
+    font-size: 26px;
     line-height: 1.7;
 
     width: 80%;
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
-
+    text-align: center;
     color: white;
 }
 
