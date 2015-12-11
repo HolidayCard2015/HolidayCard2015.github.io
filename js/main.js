@@ -56,7 +56,7 @@ $(function() {
 // inserting iframe
   $('.video-play-button').on('click', function(){
     $('#video-play-button-container').fadeOut(800, function(){
-      $('#video-player').html('<iframe src="https://player.vimeo.com/video/88905553?autoplay=1&title=0&byline=0&portrait=0" width="500" height="366" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+      $('#video-player').html('<iframe src="https://player.vimeo.com/video/148515810?autoplay=1&title=0&byline=0&portrait=0" width="500" height="366" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
     });
   });
 

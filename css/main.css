@@ -446,7 +446,7 @@ hr
 
 #who-we-are .paragraph
 {
-    font-size: 34px;
+    font-size: 30px;
     line-height: 1.5;
 
     padding-top: 40px;
@@ -538,7 +538,7 @@ hr
 
 #our-mission .paragraph
 {
-    font-size: 34.5px;
+    font-size: 30px;
     line-height: 1.5;
 
     float: left;
@@ -618,6 +618,14 @@ hr
   height: auto;*/
     width: 100%;
     max-width: 430px;
+    height: auto;
+    margin: 60px auto 60px;
+}
+
+#testimonials .slider .slider-testimonials .emoji-skinny
+{
+    width: 100%;
+    max-width: 300px;
     height: auto;
     margin: 60px auto 60px;
 }
